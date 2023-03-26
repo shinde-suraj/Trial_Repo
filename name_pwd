@@ -1,0 +1,14 @@
+#! /bin/bash
+
+read -p "enter your name : " UNAME
+read -s -p "password : " PASS1
+echo ""
+read -s -p " re enter your password : " PASS2
+echo
+if [ $PASS1 == $PASS2 ]
+then
+        echo "youe name is  $UNAME"
+        echo "Your password is $PASS1"
+else
+        echo "Your password is not mathing"
+fi
